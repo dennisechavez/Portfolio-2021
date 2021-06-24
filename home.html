@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dennise Chávez</title>
+    <meta name="viewport" content="width=device-width">
+
+    <!-- links to make the page load faster -->
+    <link rel="preload" as="style" href="resources/css/styles.css">
+    <link rel="stylesheet" href="resources/css/styles.css">
+    <!-- end of links to make the page load faster -->
+
+    <link type="text/css" href="browserreset.css" rel="stylesheet"/>
+    <link type="text/css" href="styles.css" rel="stylesheet"/>
+
+    <!-- link to the title's font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caudex:wght@700&display=swap" rel="stylesheet">
+
+    <!-- link to the paragraph's font -->
+    <link href="https://fonts.googleapis.com/css2?family=B612+Mono:wght@700&family=Caudex:wght@700&display=swap" rel="stylesheet">
+
+    <!-- link to the fontawesome icons -->
+    <script src="https://kit.fontawesome.com/2d2cadd290.js" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+    <div class="main-content">
+      <div class="background-gradient"></div>
+
+      <!-- Top Navigation Menu -->
+      <nav class="topnav">
+        <div class="topnav__links">
+
+          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+          <span class="topnav__nav-ctrl" onclick="toggleNav()">
+            <i class="fa fa-bars"></i>
+          </span>
+
+          <a href="home.html" class="topnav_link--active">Home</a>
+        </div>
+      </nav>
+
+      <!-- Navigation links (hidden by default) -->
+      <nav id="navLinks" class="topnav_menu-links">
+        <div class="topnav_menu-link-ctrl">
+          <i class="fas fa-solid fa-chevron-left topnav_menu-link"></i>
+        </div>
+        <a href="home.html" class="topnav_menu-link"></a>
+        <a href="aboutme.html" class="topnav_menu-link">About Me</a>
+        <a href="projects.html" class="topnav_menu-link">Projects</a>
+        <a href="contactme.html" class="topnav_menu-link">Contact Me</a>
+      </nav>
+
+      <h1 class="title">Dennise Chávez</h1>
+
+      <div class="text-container">
+        <img src="dennise.JPG">
+        <p class="paragraphs">My name is Dennise Chávez & I am a front-end
+        web developer +  UX designer based in Brooklyn, New York.</p>
+
+        <button href="projects.html" class="buttons">View My Portfolio</button>
+
+      </div>
+
+      <footer class="footer">
+        <div class="social-icons">
+          <a href="https://github.com/dennisechavez">
+            <i  class="fab fa-github"></i>
+          </a>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-figma"></i>
+          <i class="fab fa-paypal"></i>
+        </div>
+      </footer>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/2d2cadd290.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    </body>
+  </html>

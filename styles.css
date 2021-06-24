@@ -2,21 +2,199 @@
   BEM sytax
   .block_element--modifier
 */
+a {
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
 
 img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 100%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.background-gradient {
+  background-color: #ddcdcd;
+  background-image: linear-gradient(#ddcdcd, #7fa1a1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.buttons {
+  margin-bottom: 20px;
+  background-color: #e8cbcb;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  display: inline-block;
+  border-radius: 20px;
+  cursor: pointer;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  font-family: "B612 Mono", monospace;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  text-decoration: none;
+  line-height: 40px;
+  font-size: 16px;
+}
+
+.footer {
+  text-align: center;
+}
+
+.main-content {
+  margin-bottom: 30px;
+}
+
+.paragraphs {
+  font-family: "B612 Mono", monospace;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 100;
+  text-align: center;
+  color: white;
+  line-height: 40px;
+}
+
+.projects-image-1 {
+  /* max-width: 70%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%; */
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.social-icons {
+  margin-top: 30px;
+  color: black;
+  word-spacing: 30px;
+  cursor: pointer;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.social-icons i {
+  font-size: 25px;
+}
+
+.subtitles {
+  font-family: "B612 Mono", monospace;
+  margin-top: 20px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.subtitles-container {
+  margin-top: 20px;
+}
+
+.text-container {
+  text-align: center;
+  width: 308px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 30px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+@media (min-width: 720px) {
+  .text-container {
+    width: 500px;
+  }
+}
+
+.topnav_menu-links {
+  background-color: #e8cbcb;
+  font-family: "B612 Mono", monospace;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 190px;
+  text-decoration: none;
+  line-height: 40px;
+  display: none;
+
+  color: #000000;
+  cursor: pointer;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 100;
+}
+
+.topnav_menu-link {
+  display: block;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+.topnav_menu-link i {
+  cursor: pointer;
+}
+
+.topnav_menu-link-ctrl {
+  text-align: right;
+  margin-right: 15px;
+}
+
+.topnav_menu-link-ctrl i {
+  font-size: 23px;
+  text-decoration: none;
+}
+
+.title {
+  font-family: "Caudex", serif;
+  font-size: 29px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-transform: uppercase;
+
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* Style the navigation menu */
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: white;
   position: relative;
 }
 
-.topnav_link--active {
-  background-color: #04aa6d;
-  color: white;
+.topnav__links {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+  margin-top: 7px;
+
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "B612 Mono", monospace;
+  font-size: 26px;
+  text-align: center;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
@@ -26,24 +204,36 @@ img {
 
 /* Style navigation menu links */
 .topnav a {
-  color: white;
+  color: black;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
   display: block;
 }
 
-/* Style the hamburger menu */
-.topnav a.icon {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
+.topnav__nav-ctrl {
+  margin-left: 20px;
+  cursor: pointer;
 }
 
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: white;
   color: black;
+}
+
+.tweet {
+  margin-bottom: 25px;
+  margin: 0 auto;
+  width: 308px;
+}
+
+.twitter-tweet {
+  max-width: 40%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
