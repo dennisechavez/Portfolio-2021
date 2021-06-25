@@ -89,7 +89,7 @@ img {
 }
 
 .social-icons i {
-  font-size: 25px;
+  font-size: 35px;
 }
 
 .subtitles {
@@ -147,11 +147,14 @@ img {
   display: block;
   border-bottom: 1px solid black;
   cursor: pointer;
+  
+  transition: background 0.3s;
 }
 
-.topnav_menu-link i {
-  cursor: pointer;
+.topnav_menu-link:hover {
+  background: #ccc;
 }
+
 
 .topnav_menu-link-ctrl {
   text-align: right;
